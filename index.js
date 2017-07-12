@@ -26,16 +26,23 @@ var favColor;
 var favSneaker;
 var coffeeShop;
 
-var firstName = "Chanelle";
-var lastName = "Tolentino";
-var birthPlace = "Honolulu";
-var favoriteFood = "Asian";
-var bestMovie = "Wonder Woman";
-var favLoveSong = "Valentine";
-var cuteAnimal = "dog";
-var favColor = "green";
-var favSneaker = "adidas";
-var coffeeShop = "Starbucks";
+firstName = "Chanelle";
+lastName = "Tolentino";
+birthPlace = "Honolulu";
+favoriteFood = "Asian";
+bestMovie = "Wonder Woman";
+favLoveSong = "Valentine";
+cuteAnimal = "dog";
+favColor = "green";
+favSneaker = "adidas";
+coffeeShop = "Starbucks";
+
+firstName = "Betty";
+//overriding: the more recent value added will always show
+
+console.log(firstName, lastName, birthPlace);
+/* check in node.  remember to type (up) on keyboard if you want to call a previously typed statement
+writing variable keywords between commas in the ( ) prints all values in a row */
 
 /**
 * #2
@@ -45,8 +52,27 @@ var coffeeShop = "Starbucks";
 *
 * Each value should be a Number
 **/
+var favoriteNumber;
+var currentYear;
+var thatOnePrinceSong;
+var tokyoOlympics;
+var mariahCareyAge;
+var currentTemp;
+var studentsInClass;
+var numOfJapanPrefectures;
+var currentIphoneModel;
+var shoeSize;
 
-var favorite
+favoriteNumber = 2;
+currentYear = 2017;
+thatOnePrinceSong = 1;
+tokyoOlympics = 2011;
+mariahCareyAge = 60;
+currentTemp = 50;
+studentsInClass = 5;
+numOfJapanPrefectures = 7;
+currentIphoneModel = 7;
+shoeSize = 8;
 
 /**
 * #3
@@ -56,7 +82,27 @@ var favorite
 *
 * Each value should be a Boolean
 **/
+var likesMcDonalds;
+var watchedMrRobot;
+var ranMarathon;
+var wrestledABear;
+var lovesDonuts;
+var readHarryPotter;
+var sleptInClass;
+var drinksCoffee;
+var shopsAtWholeFoods;
+var ownsRedShoes;
 
+likesMcDonalds = true;
+watchedMrRobot = false;
+ranMarathon = false;
+wrestledABear = false;
+lovesDonuts = true;
+readHarryPotter = true;
+sleptInClass = true;
+drinksCoffee = false;
+shopsAtWholeFoods = true;
+ownsRedShoes = false;
 
 /**
 * #4
@@ -66,13 +112,23 @@ var favorite
 *
 * Each value should be Null 
 **/
+var completedPrepClass;
+var traveledToMars;
+var scoredTDinNFL;
 
+
+completedPrepClass = null;
+traveledToMars = null;
+scoredTDinNFL = null;
+
+//only lower case! null NOT Null
 
 /*
 #5. 
 * What is the difference between null and undefined? Type your answer in two or three commented-out sentences.
 */
 
+/*null has a value of blank and undefined means it doesn't have a value yet*/
 
 /**
 * #6
@@ -86,19 +142,26 @@ var favorite
 * Declare a variable named `mixPlate` and assign it an array containing different data types of your choosing.
 **/
 
-
+var platelunch = ["veggies", "rice", "hamburger", "sauce", "cheese"];
+console.log("platelunch", platelunch);
+// [ ] square brackets
+var duets = [["sunny and cher", "huey lewis and the news"], ["ben and myla", "c&k"]];
+console.log("duets", duets);
 
 /*7
 * Accessing Values in Arrays
-
-var partyList = ["carrot cake", "rocky road ice cream", "mochiko chicken", "orange tang", "lemon bars"];
-
-What is the length of this array? Please print the length (a number) to the console.
+What is the length of this array? Please print the length (a number) to the console 
+(.length only works for strings (length of characters in the string))
 What is the index position of carrot cake? Please print this item to the console.
 What is the index position of lemon bars? Please print this item to the console.
 */
+var partyList = ["carrot cake", "rocky road ice cream", "mochiko chicken", "orange tang", "lemon bars"];
+console.log("First Index", partyList[0]);
+//will print the first element in your array
 
-
+var stuff = [24, "Timmy", ["white", "blue", "yellow"]];
+console.log(stuff[2][1]);
+//matrix, 2d array = nested array, prints the 2nd element in the third element of the array, chaining
 
 /*
 * #8 
