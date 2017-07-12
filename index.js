@@ -15,7 +15,27 @@ console.log(pet);
 *
 * Each value should be a String. 
 **/
+var firstName;
+var lastName;
+var birthPlace;
+var favoriteFood;
+var bestMovie;
+var favLoveSong;
+var cuteAnimal;
+var favColor;
+var favSneaker;
+var coffeeShop;
 
+var firstName = "Chanelle";
+var lastName = "Tolentino";
+var birthPlace = "Honolulu";
+var favoriteFood = "Asian";
+var bestMovie = "Wonder Woman";
+var favLoveSong = "Valentine";
+var cuteAnimal = "dog";
+var favColor = "green";
+var favSneaker = "adidas";
+var coffeeShop = "Starbucks";
 
 /**
 * #2
@@ -26,6 +46,7 @@ console.log(pet);
 * Each value should be a Number
 **/
 
+var favorite
 
 /**
 * #3
@@ -129,7 +150,6 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * 3>2 6>3 (use and)
 * 7>2 8<5 (use and)
 * Declare variables and print the results to the console. What are the differences between the three and why?*/
-
 
 
 /*
