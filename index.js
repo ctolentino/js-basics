@@ -202,9 +202,33 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * Declare another variable named `isLooselyEqual` and compare the two strings "Tacocat" and "tacocat" using equality.
 * Print both variables to the console. If the answers are different, why? If not, why not? Write you answer two or three commented-out sentences.
 
+--2 (minus 2)
+
+|| <-- "pipes"
+
 * Declare a variable named `sameNum` and compare a string "5" and a number 5 using strict equality.
 * Declare another variable named `sameNumba` and compare a string "5" and a number 5 using equality.
 * Print both variables to the console. If the answers are different, why? If not, why not? Write you answer two or three commented-out sentences.
+*/
+
+var numNum = 5;
+var numString = "5";
+
+console.log(numNum);
+console.log(numString);
+
+var isStrictlyEqual = "tacocat" === "Tacocat";
+var isLooselyEqual = 5 == "5";
+var isTrue = 67 == "67";
+var isStrict = 355 === "355";
+
+console.log("isStrictlyEqual", isStrictlyEqual, "isLooselyEqual", 
+	isLooselyEqual, "isTrue", isTrue, "isStrict", isStrict);
+
+/*
+Examples above have same data but not same data type
+== equality (checks for data)
+=== strict equality (checks for data & data type)
 */
 
 /*
