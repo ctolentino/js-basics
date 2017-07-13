@@ -197,15 +197,9 @@ At the age of xx, Mariah Carey, wearing her fancy xx, sang xx at the xx.
 * #10
 * Comparisons & Logic
 * Variables with the outcome of a comparison operation:
-*
 * Declare a variable named `isStrictlyEqual` and compare two strings "Tacocat" and "tacocat" using the strict equality.
 * Declare another variable named `isLooselyEqual` and compare the two strings "Tacocat" and "tacocat" using equality.
 * Print both variables to the console. If the answers are different, why? If not, why not? Write you answer two or three commented-out sentences.
-
---2 (minus 2)
-
-|| <-- "pipes"
-
 * Declare a variable named `sameNum` and compare a string "5" and a number 5 using strict equality.
 * Declare another variable named `sameNumba` and compare a string "5" and a number 5 using equality.
 * Print both variables to the console. If the answers are different, why? If not, why not? Write you answer two or three commented-out sentences.
@@ -216,6 +210,11 @@ var numString = "5";
 
 console.log(numNum);
 console.log(numString);
+/*
+Examples above have same data but not same data type
+== equality (checks for data)
+=== strict equality (checks for data & data type)
+*/
 
 var isStrictlyEqual = "tacocat" === "Tacocat";
 var isLooselyEqual = 5 == "5";
@@ -224,20 +223,24 @@ var isStrict = 355 === "355";
 
 console.log("isStrictlyEqual", isStrictlyEqual, "isLooselyEqual", 
 	isLooselyEqual, "isTrue", isTrue, "isStrict", isStrict);
-
 /*
-Examples above have same data but not same data type
-== equality (checks for data)
-=== strict equality (checks for data & data type)
-*/
-
-/*
-* Use the logical && or || and compare the following:
+* Use the logical && or || <--pipes and compare the following:
 * 3>2 3<1 (use or)
 * 3>2 6>3 (use and)
 * 7>2 8<5 (use and)
 * Declare variables and print the results to the console. What are the differences between the three and why?*/
 
+var firstLogicalCondition = 3 > 2 || 3 < 1;
+console.log("firstLogicalCondition", firstLogicalCondition);
+//true because either expression can be true for the condition to be true
+
+var secondLogicalCondition = 3 > 2 && 6 > 3;
+console.log("secondLogicalCondition", secondLogicalCondition);
+//true because both expressions must be true for the condition to be true
+
+var thirdLogicalCondition = 7 > 2 && 8 < 5;
+console.log("thirdLogicalCondition", thirdLogicalCondition);
+//false because both expressions must be true for the condition to be true
 
 /*
 * #11
@@ -252,6 +255,34 @@ Examples above have same data but not same data type
 * assignment statement to show the current value. REMEMBER: an assignment is DIFFERENT from a declaration.
 */
 
+var myBox;
+//declaration statement
+
+var myBox = 9;
+//assignment statement
+
+/*Objects: collection of key value pairs.  Use curly braces { }, variables that hold variables with data of their own.
+separated by commas*/
+
+var studentObj = {
+	hair: "blue",
+	firstName: "Bob",
+	lastName: "Marley"
+}
+
+studentObj.idNumber = 12435533;
+console.log(studentObj);
+
+studentObj.color = "mahagony";
+console.log(studentObj);
+
+var data1 = {
+	names: ["bob", "sue", {firstName: "billyJoe"}, "Sue"],
+	age: [1, 3, 5, [1, 3]]
+}
+
+console.log(data1.names[1].firstName);
+
 /*
 * Final Boss 
 * Additional exercises designed to further challenge you and give you a jump start on the next topic that'll be covered.
@@ -263,21 +294,80 @@ Examples above have same data but not same data type
 * Declare a variable 'pieResult' and assign it to the function call.
 * Console.log the variable to see the result.*/
 
+function greeting(name1, name2){
+	console.log(name1);
+	console.log(name2);
+}
+
+greeting("Christie", "Natalie");
+
+//global variable - can be accessed from any function in this file
+var z = 20;
+
+function addition(){
+	//local variable declared - can only be accessed within (the scope) of the function
+	var num1 = 77;
+	return num1;
+//cannot have more than 1 return in a function
+	//return a + b;
+}
+
+console.log(addition());
+
+/*function subtraction(a, b){
+	return num1;
+	return a-b;
+}
+
+//num1 cannot be accessed because it's outside of the scope of the function
+console.log(subtraction(1, 5));
+*/
+
+function bakePie(ingredient){
+	return "Today's special " + ingredient + " pie.";
+}
+
+var pieResult = bakePie();
+
+console.log(pieResult);
 
 /*
 * Declare a Function named `jump` which has a single parameter, `height`.
 * This function should return a string, "You jumped height feet high!" Where height will be the value that you pass into the function.
 * For example, if the value is 9, it should return "You jumped 9 feet high!"
-
-
-
 * Declare a variable 'jumpResult' and assign it to the function call.
 * Console.log the variable to see the result.*/
 
+function jump(height){
+	return "You jumped " + height + " feet high!";
+}
+
+var jumpResult = jump();
+
+console.log(jumpResult);
 
 /*
 * Declare a Function named `cook` which a takes three parameters, `ingredient1`, `ingredient2`, `recipeName`.
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 */
+
+/*function cook(ingredient1, ingredient2, recipeName){
+	//return should always be the last line of code (Quits the function)
+	
+	return ingredient1.charAt(0).toUpperCase() + ingredient1.slice(1) + " and " + ingredient2.charAt(0).toUpperCase() + ingredient2.slice(1) + " make a " + recipeName.charAt(0).toUpperCase() + recipeName.slice(1) + "!";
+}
+
+console.log(cook("cheese", "pep", "pizza")); */
+
+var ingredArray = ["ingredient1", "ingredient2", "recipeName"];	
+var firstIngred = ingredArray.slice(0);
+console.log(firstIngred);
+
+
+
+
+
+
+
 
